@@ -3,7 +3,7 @@ region = "us-east-1"
 }
 
 resource "aws_instance" "one" {
-count = var.instance_count
+count = "2"
 ami = "ami-0b41f7055516b991a"
-instance_type = var.instance_type
+instance_type = "t2.micro"
 }
